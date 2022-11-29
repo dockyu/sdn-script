@@ -1,0 +1,49 @@
+{
+    "ports": {
+        "of:0000000000000004/2": {
+            "interfaces": [{
+                "name": "h1"
+            }]
+        },
+        "of:0000000000000004/3": {
+            "interfaces": [{
+                "name": "h2"
+            }]
+        },
+        "of:0000000000000005/2": {
+            "interfaces": [{
+                "name": "h3"
+            }]
+        },
+        "of:0000000000000005/4": {
+            "interfaces": [{
+                "name": "h4"
+            }]
+        },
+        "of:0000000000000003/2": {
+            "interfaces": [{
+                "name": "h5"
+            }]
+        },
+        "of:0000000000000003/3": {
+            "interfaces": [{
+                "name": "h6"
+            }]
+        }
+    },
+    "apps": {
+        "org.onosproject.vpls": {
+            "vpls": {
+                "vplsList": [{
+                        "name": "VPLS1",
+                        "interfaces": ["h1", "h3", "h5"]
+                    },
+                    {
+                        "name": "VPLS2",
+                        "interfaces": ["h2", "h4", "h6"]
+                    }
+                ]
+            }
+        }
+    }
+}

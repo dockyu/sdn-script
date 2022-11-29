@@ -1,1 +1,22 @@
+------- sdn -------
+
 app activate org.onosproject.openflow
+
+------- vlan -------
+
+app activate org.onosproject.fwd
+app activate org.onosproject.openflow
+app activate org.onosproject.vpls
+
+------- wifi -------
+
+app activate org.onosproject.fwd
+app activate org.onosproject.openflow
+app activate org.onosproject.hostprovider
+app activate org.onosproject.lldpprovider
+app activate org.onosproject.openflow-base
+app activate org.onosproject.mobility
+app activate org.onosproject.openflow-message
+app activate org.onosproject.ovsdb-base
+app activate org.onosproject.drivers.ovsdb
+app activate org.onosproject.influxdbmetrics
